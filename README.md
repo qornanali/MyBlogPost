@@ -34,7 +34,7 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](https:
 ## Acknowledgments
 
 * [Android Model View Presenter(MVP) with Retrofit and RxJava](https://medium.com/@alandwiprasetyo/android-model-view-presenter-mvp-with-retrofit-and-rxjava-indonesia-version-ab7824ef2a5e) (Indonesia Version) by Alan Dwi Prasetyo
-* [MVP] (https://github.com/isfaaghyth/MVP/) by Muh Isfhani Ghiath
+* [MVP](https://github.com/isfaaghyth/MVP/) by Muh Isfhani Ghiath
 * [Android MVP Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture) by Mindorks
 * [RxJava on Android](https://blog.mindorks.com/tagged/rxjava) by Mindorks
 * [Using Retrofit 2.x as REST client - Tutorial](http://www.vogella.com/tutorials/Retrofit/article.html) by Vogella

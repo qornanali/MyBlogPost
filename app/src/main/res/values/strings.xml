@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyBlogPost</string>
+
+    <string name="do_read_more">Read more..</string>
+</resources>

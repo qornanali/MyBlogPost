@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/black_purple</color>
+    <color name="colorPrimaryDark">@color/black_purple_dark</color>
+    <color name="colorAccent">@color/black_purple_light</color>
+
+    <color name="black_purple">#523f6e</color>
+    <color name="black_purple_dark">#241C30</color>
+    <color name="black_purple_light">#705696</color>
+    <color name="white">#fff</color>
+</resources>

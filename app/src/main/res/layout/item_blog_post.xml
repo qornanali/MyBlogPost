@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    android:layout_marginLeft="@dimen/default_margin_medium"
+    android:layout_marginRight="@dimen/default_margin_medium"
+    android:layout_marginTop="@dimen/default_margin_small"
+    android:layout_marginBottom="@dimen/default_margin_small">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="@dimen/default_margin_small"
+            android:layout_marginTop="@dimen/default_margin_small"
+            android:layout_marginLeft="@dimen/default_margin_small"
+            android:id="@+id/tv_blog_post_title"
+            android:textColor="@color/black_purple"
+            android:maxLines="1"
+            android:textSize="@dimen/default_textview_textsize_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_small"/>
+
+        <ImageView
+            android:id="@+id/iv_blog_post_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="@dimen/default_margin_small" />
+
+        <TextView
+            android:layout_marginRight="@dimen/default_margin_small"
+            android:layout_marginTop="@dimen/default_margin_small"
+            android:layout_marginLeft="@dimen/default_margin_small"
+            android:id="@+id/tv_blog_post_content"
+            android:textColor="@color/black_purple_dark"
+            android:maxLines="3"
+            android:textSize="@dimen/default_textview_textsize_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_small"/>
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/default_margin_small"
+            android:layout_marginLeft="@dimen/default_margin_small"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/default_margin_small"
+                    android:src="@drawable/ic_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/default_textview_textsize_small"
+                    android:textColor="@color/black_purple_light"
+                    android:id="@+id/tv_blog_post_like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_blog_post_read_more"
+                android:text="@string/do_read_more"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/default_textview_textsize_small"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

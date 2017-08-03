@@ -38,3 +38,4 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](https:
 * [Android MVP Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture) by Mindorks
 * [RxJava on Android](https://blog.mindorks.com/tagged/rxjava) by Mindorks
 * [Using Retrofit 2.x as REST client - Tutorial](http://www.vogella.com/tutorials/Retrofit/article.html) by Vogella
+* [Mengulik Reactive Programming di Android — bagian 1](https://medium.com/@rohmanhakim/mengulik-reactive-programming-di-android-bagian-1-916b111c5597) by Muhammad Arif R.H.

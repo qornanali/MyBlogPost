@@ -10,7 +10,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;
 
-public interface ApiService {
+public interface RestApi {
 
     @GET("posts")
     Observable<Result> getBlogPosts(@Query("number") int number);

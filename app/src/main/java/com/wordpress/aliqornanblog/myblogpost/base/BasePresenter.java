@@ -4,7 +4,7 @@ package com.wordpress.aliqornanblog.myblogpost.base;
  * Created by qornanali on 8/1/17.
  */
 
-import com.wordpress.aliqornanblog.myblogpost.api.ApiService;
+import com.wordpress.aliqornanblog.myblogpost.api.RestApi;
 import com.wordpress.aliqornanblog.myblogpost.api.NetworkClient;
 
 import rx.Observable;
@@ -17,13 +17,13 @@ import rx.subscriptions.CompositeSubscription;
 public class BasePresenter<V extends BaseView> {
 
     protected V view;
-    protected ApiService apiService;
+    protected RestApi restApi;
     private CompositeSubscription compositeSubscription;
     private Subscriber subscriber;
 
     public void attachView(V view){
         this.view = view;
-        apiService = NetworkClient.getRetrofit().create(ApiService.class);
+        restApi = NetworkClient.getRetrofit().create(RestApi.class);
     }
 
     public void dettachView(){

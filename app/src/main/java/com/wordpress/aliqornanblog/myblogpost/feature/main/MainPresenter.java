@@ -4,6 +4,8 @@ package com.wordpress.aliqornanblog.myblogpost.feature.main;
  * Created by qornanali on 8/2/17.
  */
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.Snackbar;
 
 import com.wordpress.aliqornanblog.myblogpost.R;
@@ -21,17 +23,29 @@ public class MainPresenter extends BasePresenter<MainView> {
 
     public void getBlogPosts(){
         view.showProgressDialog(view.getContext().getString(R.string.message_loading_data), false);
-        onSubscribe(apiService.getBlogPosts(5),
+        onSubscribe(restApi.getBlogPosts(5),
                 new RequestCallback<Result>() {
                     @Override
                     public void onRequestSuccess(Result model) {
-                        view.onSuccess(model);
+                        if(model != null){
+                            if(model.getPosts() != null){
+                                if(model.getPosts().size() > 0){
+                                    view.showDataListIntoRecyclerView(model.getPosts());
+                                }else{
+                                    view.showDataIsEmpty();
+                                }
+                            }else{
+                                view.showErrorWhenGetData();
+                            }
+                        }else{
+                            view.showErrorWhenGetData();
+                        }
                     }
 
                     @Override
                     public void onRequestFailure(String message) {
-                        view.onError(message);
                         view.showSnackBar(message, Snackbar.LENGTH_LONG);
+                        view.showErrorWhenGetData();
                     }
 
                     @Override
@@ -39,6 +53,14 @@ public class MainPresenter extends BasePresenter<MainView> {
                         view.dismissProgressDialog();
                     }
                 });
+    }
+
+    public void openUrlIntoBrowser(String url){
+        if(!url.equals("")){
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            view.getContext().startActivity(i);
+        }
     }
 
 }

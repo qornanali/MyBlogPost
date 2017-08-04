@@ -9,11 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
-public interface BaseView<M> {
-
-    void onSuccess(M model);
-
-    void onError(String errorMessage);
+public interface BaseView {
 
     Context getContext();
 

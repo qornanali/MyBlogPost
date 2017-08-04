@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="message_loading_data">Loading data</string>
+    <string name="message_no_data">There is no data</string>
+    <string name="message_error_get">Found error when getting data</string>
 </resources>
